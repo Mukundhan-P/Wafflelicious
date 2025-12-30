@@ -1,0 +1,215 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*Background Img */
+
+.landing {
+    background-image: url('../Wafflelicious/waffle2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+}
+
+/*Nav Bar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.navbar-toggle-menu {
+    display: none;
+}
+
+.sidenav-bar {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-toggle-menu {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .sidenav-bar {
+        display: block;
+    }
+}
+
+/*SideNavBar */
+
+.sidenav-bar {
+    padding: 20px;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    color: white;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/*Content*/
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tagline1 {
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.callus {
+    color: pink;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.maintext div {
+    margin-top: 30px;
+}
+
+.maintext button {
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+}
+
+.maintext button:hover{
+    cursor: pointer;
+    background-color: brown;
+    border: 1px solid brown;
+}
+
+
+/* Waffle Menu Container */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Images */
+.menu img {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.menu h2 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.menu button {
+    display: inline-block;
+    margin: 15px;
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu button:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+/* For Tablet view  */
+@media (max-width: 1024px) {
+    .menu {
+        flex: 1 1 45%;
+    }
+}
+
+/* For Mobile View */
+@media (max-width: 600px) {
+    .menu {
+        flex: 1 1 90%;
+    }
+}
+
+
+.menu img {
+    width: 230px;
+    height: 290px;
+    border-radius: 20px;
+   
+}
+
+.menu h2 {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+#menuheading {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.location {
+    line-height: 30px;
+    text-align: center;
+    padding: 20px;
+}
